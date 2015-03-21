@@ -1,0 +1,23 @@
+@(message: String)
+
+@main("Javascript i18n") {
+	
+	<h1>Messages from messages.en file through Javascript</h1>
+    <h2 class="title"></h2>
+    <h3 class="welcome-message"></h3>
+    
+}
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		var title = Messages('title');
+		$('.title').text(title);
+		
+		var greeting = Messages('welcome.message', 'Joe');
+		$('.welcome-message').text(greeting);		
+		
+	});
+
+</script>

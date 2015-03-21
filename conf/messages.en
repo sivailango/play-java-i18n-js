@@ -1,0 +1,4 @@
+title=Play Java i18n Javascript
+
+welcome.message = Hi {0}! Welcome...
+
